@@ -55,7 +55,6 @@ public class ReverseArray {
             int temporary = list[left];
             list[left] = list[right];
             list[right] = temporary;
-
             left++;
             right--;
         }
@@ -70,11 +69,9 @@ public class ReverseArray {
         if (left >= right) {
             return;
         }
-
         int temporary = list[left];
         list[left] = list[right];
         list[right] = temporary;
-
         reverseArrayRecursive(list, left + 1, right - 1);
     }
 }
